@@ -1,0 +1,215 @@
+
+$color-white: #ffffff;
+$color-light-grey: #f1f2f6;
+$color-grey: #8395a7;
+$color-green: #1dd1a1;
+$font-one: 'Montserrat', sans-serif;
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.7;
+    font-family: $font-one;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.page-title {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 170px;
+    margin: 24px auto 0 auto;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-one {
+    color: $color-white;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 100px;
+}
+
+.btn-two {
+    background: $color-green;
+    color: $color-white;
+}
+
+/* Navigation */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    color: $color-white;
+    p {
+        flex: 1;
+    }
+    ul {
+        flex: 1;
+    }
+    li {
+        display: inline-block;
+        padding-right: 30px;
+    }
+}
+    
+    
+    
+/* Splash */
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url("https://imgupload.pl/images/2022/10/26/marcelo-quinan-R3pUGn5YiTg-unsplash-ciemne.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.splash-inner {
+    height: 100vh;
+    color: $color-white;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-title {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: normal;
+    span {
+        font-weight: bold;
+    }
+}
+
+/* About us */
+.about-us {
+    .page-title {
+        text-align: center;
+    }
+    .page-subtitle {
+        text-align: center;
+    }
+}
+
+.about-us .row {
+    display: flex;
+    .box {
+        margin: 20px;
+        .box-title {
+            text-align: center;
+        }
+        .box-text {
+            text-align: center;
+        }
+        .box-icon {
+            font-size: 40px;
+            text-align: center;
+            i {
+                background: $color-light-grey;
+                color: $color-grey;
+                padding: 15%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+.box-icon i:hover {
+    background: $color-green;
+    color: $color-white;
+}
+
+.box-button {
+    display: flex;
+}
+
+/* Image-Description */
+
+.grey-color {
+    background: $color-light-grey;
+}
+
+.image-description {
+    .row {
+    display: flex;
+    }
+}
+
+.image-description {
+    .image {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+    }
+    .description {
+        flex: 1;
+    }
+}
+
+/* Motto */
+
+.motto {
+    background-image: url("https://imgupload.pl/images/2022/10/26/ciemne.jpg");
+    background-position: center center;
+    background-size: cover;
+    .information {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        color: $color-white;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
+        .section-subtitle {
+            font-weight: normal;
+            color: $color-grey;
+            margin-top: 0;
+            span {
+                font-weight: bold;
+            }
+        }
+        .section-title {
+            font-weight: normal;
+            span {
+            color: $color-green;
+            }
+        }
+    }
+}
+
+
+
+
+
